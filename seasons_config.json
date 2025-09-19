@@ -1,0 +1,15 @@
+{
+     "show_name": "One Piece Yabai",
+     "seasons": [
+       { "season": 1,  "folder": "Saison 1",  "range": [1, 7] },
+       { "season": 2,  "folder": "Saison 2",  "range": [8, 16] },
+       { "season": 3,  "folder": "Saison 3",  "range": [17, 22] },
+       { "season": 4,  "folder": "Saison 4",  "range": [23, 37] },
+       { "season": 5,  "folder": "Saison 5",  "range": [38, 42] },
+       { "season": 6,  "folder": "Saison 6",  "range": [43, 55] },
+       { "season": 7,  "folder": "Saison 7",  "range": [56, 64] },
+       { "season": 8,  "folder": "Saison 8",  "range": [65, 91] },
+       { "season": 9,  "folder": "Saison 9",  "range": [92, 108] },
+       { "season": 10, "folder": "Saison 10", "range": [109, 131] }
+     ]
+   }

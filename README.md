@@ -1,20 +1,23 @@
-# 📺 Script One Piece Kaï → Plex
+## 🎬 Utilisation avec Jellyfin
 
-Ce script permet d’automatiser l’organisation du pack **One Piece Kaï** pour qu’il soit directement lisible par **Plex / Jellyfin / Emby** :
+Ce script est spécialement adapté pour **One Piece Kaï – Ultime Pack** afin d’obtenir une configuration automatique dans **Jellyfin**.  
 
-- **Dézippe** l’archive `One Piece Kaï (Pack Plex).zip` si elle est présente.  
-- **Rassemble** tous les épisodes (`.mkv` / `.mp4`) depuis les dossiers `Saga*` dans un seul dossier central.  
-- **Renomme** les épisodes au format `SxxEyyy` avec titre et bloc technique.  
-- **Range** les fichiers dans les bons dossiers `Saison X` sous `One Piece Kaï/`.  
-- **Normalise** aussi les fichiers annexes (`.nfo`, `-thumb.png`, sous-titres, etc.) pour qu’ils correspondent à Plex.  
+- Les épisodes sont renommés et rangés selon le format `SxxEyyy` attendu par Jellyfin.  
+- Les fichiers `.nfo`, `.jpg`, `.png` et autres sidecars sont également renommés pour correspondre aux épisodes.  
+- Les saisons sont automatiquement organisées d’après le fichier `seasons_config.json` fourni.  
+
+👉 Résultat : Jellyfin détecte **toutes les saisons et épisodes sans intervention manuelle**, avec les bonnes jaquettes, fanarts et métadonnées locales incluses dans le pack.
 
 ---
 
 ## 📂 Pré-requis
 
-1. Avoir Python 3 installé sur ton serveur.  
-2. Le pack **One Piece Kaï (Pack Plex).zip** téléchargé et placé a coté du script
-3. Créer un fichier `seasons_config.json` dans le même dossier que le script, par ex. :
+
+1. Avoir **Python 3** installé sur ton serveur.  
+2. Télécharger le pack **One Piece Kaï Ultime**:  
+   👉 https://nyaa.si/user/Fan-Kai?f=0&c=0_0&q=one+piece
+3. Placer le **script** directement **à l’intérieur du pack décompressé** (là où se trouvent les dossiers `Saga*` et l’archive `One Piece Kaï (Pack Plex).zip`).  
+4. Créer un fichier `seasons_config.json` dans le même dossier que le script, par ex. :
 
 ```json
    {
